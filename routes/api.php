@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\Todocontroller;
+use App\Http\Controllers\API\Contactcontroller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('todos', Todocontroller::class);
+Route::apiResource('contacts', Contactcontroller::class);
